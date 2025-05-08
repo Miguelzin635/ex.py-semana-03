@@ -1,5 +1,5 @@
 grupos = []
-for i in range(2):
+for i in range(5):
     print(f"Grupo {i + 1}")
     valor_total = []
     for n in range(4):
