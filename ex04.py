@@ -1,21 +1,32 @@
 grupos = []
 for i in range(2):
-    grupo = []
     print(f"Grupo {i + 1}")
+    valor_total = []
     for n in range(4):
         valor = float(input(f"Digite o {n + 1}º valor: "))
-        grupo.append(valor)
-    grupos.append(grupo)
+        valor_total.append(valor)
+    grupos.append(valor_total)
 
 print("\nGrupos lidos:")
-for i, grupo in enumerate(grupos, 1):
-    print(f"Grupo {i}: {grupo}")
+for i, valor_total in enumerate(grupos, 1):
+    print(f"Grupo {i}: {valor_total}")
 
-for grupo in grupos:
-    for i in range(len(grupo)):
-        for j in range(i + 1, len(grupo)):
-            if grupo[i] > grupo[j]:
-                grupo[i], grupo[j] = grupo[j], grupo[i]
 print("\nGrupos em ordem crescente: ")
-for i, grupo in enumerate(grupos, 1):
-    print(f"Grupo {i}: {grupo}")
+for valor_total in grupos:
+    for l in range(len(valor_total)):
+        for j in range(l + 1, len(valor_total)):
+            if valor_total[l] > valor_total[j]:
+                valor_total[l], valor_total[j] = valor_total[j], valor_total[l]
+for i, valor_total in enumerate(grupos, 1):
+    print(f"Grupo {i}: {valor_total}")
+
+print("\nGrupos em ordem decrescente: ")
+for valor_total in grupos:
+    for l in range(len(valor_total)):
+        for j in range(l + 1, len(valor_total)):
+            if valor_total[l] < valor_total[j]:
+                valor_total[l], valor_total[j] = valor_total[j], valor_total[l]
+for i, valor_total in enumerate(grupos, 1):
+    print(f"Grupo {i}: {valor_total}")
+        
+input('\nPressione Enter para fechar o programa...')
