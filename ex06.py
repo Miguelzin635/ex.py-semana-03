@@ -1,5 +1,5 @@
 fe_1 = fe_2 = fe_3 = fe_4 = fe_5 = 0
-for i in range(6):
+for i in range(15):
     pessoa = i + 1
     idade = int(input('Digite sua idade: '))   
     if idade <= 15:
