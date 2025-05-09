@@ -3,7 +3,7 @@ peso_inferior_40 = 0
 mais_50 = 0
 total_altura = 0
 
-for i in range(3):
+for i in range(25):
     print(f'\nPessoa {i + 1}')
     idade = int(input('Digite sua idade: '))
     altura = float(input('Digite sua altura: '))
