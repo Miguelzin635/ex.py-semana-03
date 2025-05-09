@@ -2,7 +2,7 @@ i = 1
 vista = 0
 prazo = 0
 
-while i <= 3:
+while i <= 15:
     codigo = input('Digite o código da transação("V" para à vista e "P" a prazo ): ')
     valor = float(input('Digite o valor da transação: '))
 
