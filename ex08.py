@@ -1,7 +1,14 @@
-cont = 1
-for i in range(1, 15):
-    cont = i + 1
-    for i in range(1, 11):
-        print(f'{i} X {cont} = {i * cont} ')
+i = 1
+vista = 0
+prazo = 0
 
-input('Pressione Enter para sair do programa...')
+while i <= 15:
+    codigo = input('Digite o código da transação("V" para à vista e "P" a prazo )')
+    valor = float(input('Digite o valor da transação: '))
+
+    if codigo == "v" or codigo == "V":
+        vista = vista + valor
+    elif codigo == "p" or codigo == "P":
+        prazo = prazo + valor
+    else: print('Código inválido!')
+i = i + 1
