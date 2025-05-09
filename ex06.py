@@ -23,7 +23,8 @@ print('3ª\t\t\tde 31 a 45 anos\t\t', fe_3)
 print('4ª\t\t\tde 46 a 60 anos\t\t', fe_4)
 print('5ª\t\t\tAcima de 61 anos\t', fe_5)
 print('-' * 60)
-print(f' porcentagem de pessoas da 1° faixa etária é de: {x:.2f}%')
-print(f' porcentagem de pessoas da 5° faixa etária é de: {y:.2f}%')
+if fe_1 > 0 and fe_5 > 0:
+    print(f' porcentagem de pessoas da 1° faixa etária é de: {x:.2f}%')
+    print(f' porcentagem de pessoas da 5° faixa etária é de: {y:.2f}%')
 
 input('\nPressione Enter para fechar o programa...')
