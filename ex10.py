@@ -4,9 +4,9 @@ olhos_azuis = 0
 ruivas = 0
 total_altura_baixa = 0
 idade_altura_baixa = 0
-for i in range(2):
+for i in range(20):
     idade = 0
-    idade = int(input('Digite sua idade: '))
+    idade = int(input('\nDigite sua idade: '))
     peso = float(input('Digite seu peso: '))
     altura = float(input('Digite sua altura: '))
     olhos = input('Digite a cor dos olhos (A - Azul, P - Preto, V - Verde e C - Castanho): ')
@@ -54,6 +54,6 @@ if ruivas > 0:
     print(f'A quantidade de pessoas ruivas sem olhos azuis é: {ruivas}')
 else: print('Nenhuma pesssoa ruiva sem olhos azuis foi cadastrada.')
 
-input('Pressione Enter para fechar o programa...')
+input('\nPressione Enter para fechar o programa...')
         
         
