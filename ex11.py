@@ -14,4 +14,4 @@ for i in range(1, 11):
     print(f'\t\t\t\t\t{parcelas:<10}\t\t\tR$ {preco_final + (preco_final * acrescimo / 100):.2f}')
 print('-' * 90)
 
-input('Pression Enter para fechar o programa...')
+input('Pressione Enter para fechar o programa...')
